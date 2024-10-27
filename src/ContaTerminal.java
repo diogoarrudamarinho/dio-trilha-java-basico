@@ -5,21 +5,23 @@ public class ContaTerminal {
         
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Digite o Nome do Cliente: ");
+        System.out.print("Digite o Nome do Cliente: ");
         String nomeCliente = input.nextLine();
 
-        System.out.println("Digite o Numero da Conta: ");
+        System.out.print("Digite o Numero da Conta: ");
         int numConta = input.nextInt();
+        
+        input.nextLine(); //Limpar o Buffer do Teclado
 
-        System.out.println("Digite a Agencia: ");
+        System.out.print("Digite a Agencia: ");
         String numAgencia = input.nextLine();
 
-        System.out.println("Digite o Nome do Cliente: ");
+        System.out.print("Digite o Saldo: ");
         double saldo = input.nextDouble();
 
         System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco," + 
-                           "sua agência é " + numAgencia + ", conta " + numConta +
-                           " e seu saldo " + saldo + " já está disponível para saque");
+                           " sua agência é " + numAgencia + ", conta " + numConta +
+                           " e seu saldo " + saldo + " já está disponível para saque!");
 
         input.close();
     }
